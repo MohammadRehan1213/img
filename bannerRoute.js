@@ -6,11 +6,14 @@ const { createadmin, getbanner } =
     require('./bannerCtrl');
 const router = express.Router();
 router.get("/", getbanner)
+
 router.post("/", upload.fields([
     { name: "image1" },
     { name: "image2" },
     { name: "image3" },
 ]), createadmin)
+
+router.delete("/", deletedata)
 
 
 module.exports = router;
