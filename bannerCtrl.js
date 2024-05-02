@@ -46,7 +46,7 @@ const createadmin = (async (req, res) => {
 
 const deletedata = async (req, res) => {
     try {
-        let result = await db.findByIdAndDelete({ _id: req.params.id },
+        let result = await admin.findByIdAndDelete({ _id: req.params.id },
             {
                 $set: req.body
             })

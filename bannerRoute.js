@@ -13,7 +13,7 @@ router.post("/", upload.fields([
     { name: "image3" },
 ]), createadmin)
 
-router.delete("/", deletedata)
+router.delete("/:id", deletedata)
 
 
 module.exports = router;
