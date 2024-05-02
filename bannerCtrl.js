@@ -8,6 +8,10 @@ cloudinary.config({
     api_secret: process.env.SECRET_KEY,
 });
 
+const getbanner = (async (req, res) => {
+    const data = await admin.find()
+    res.json(data)
+})
 const createadmin = (async (req, res) => {
     try {
         let result1, result2, result3;
@@ -40,4 +44,4 @@ const createadmin = (async (req, res) => {
     }
 });
 
-module.exports = { createadmin }
+module.exports = { createadmin, getbanner }
