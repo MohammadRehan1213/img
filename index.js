@@ -22,9 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use("/api/v1/banner", require("./bannerRoute"))
-
-
-
+app.use("/api/v1/banner/kaaina", require("./Kiaan/bannerRoute"))
 
 
 
