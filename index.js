@@ -25,7 +25,6 @@ app.use("/api/v1/banner", require("./bannerRoute"))
 app.use("/api/v1/banner/kaaina", require("./Kiaan/bannerRoute"))
 
 
-
 httpServer.listen(PORT, () => {
     console.log(`Doctor Server is running at PORT ${PORT} 🏥 🚑 🏥 🚑`);
 });
